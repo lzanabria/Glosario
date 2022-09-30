@@ -21,3 +21,14 @@ nums.forEach((val, ind, duplic) => {
 });
 ```
 
+#### **forEach.**
+
+Es el conjunto de un ciclo y una iteración, el cual es un método que permite llamar a un callback una vez para cada item sobre el que se itera dentro de un array.
+
+```js
+let frutas=["Manzana", "Sandia", "Melon", "Cereza", "Piña"];
+frutas.forEach((val, ind, duplic) => {
+    alert(ind+1+". "+val);
+});
+```
+
