@@ -10,3 +10,14 @@ for(let i=1; i<=3; i++) {
 }
 ```
 
+#### **ITERACIÓN.**
+
+Es un proceso que nos permite recorrer una colección repetidas veces y devolver un valor al terminar.
+
+```js
+let nums=["A", "E", "I", "O", "U"];
+nums.forEach((val, ind, duplic) => {
+    alert(val);
+});
+```
+
