@@ -1,8 +1,7 @@
 addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
-        let frutas=["Manzana", "Sandia", "Melon", "Cereza", "Piña"];
-        frutas.forEach((val, ind, duplic) => {
-            alert(ind+1+". "+val);
-        });
+        let numbers=[65, 44, 12, 4];
+        let newArr=numbers.map(num => num*10);
+        alert(newArr);
     }, 500);
 });

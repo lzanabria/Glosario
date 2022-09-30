@@ -32,3 +32,13 @@ frutas.forEach((val, ind, duplic) => {
 });
 ```
 
+#### **map.**
+
+Es un método, que crea un duplicado con las modificaciones que itera llamando a un callback para cada item de la variable original, por lo que a su vez no altera a esta misma.
+
+```js
+let numbers=[65, 44, 12, 4];
+let newArr=numbers.map(num => num*10);
+alert(newArr);
+```
+
