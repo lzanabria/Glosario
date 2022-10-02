@@ -62,3 +62,16 @@ let posicion=text.search("mensaje");
 alert(posicion);
 ```
 
+#### **Operador ternario.**
+
+El operador ternario es una estructura compacta para hacer condicionales, consiste de una expresión que se evaluará y dependiendo de si dicha evaluación fue positiva o negativa devolverá una u otra cosa.
+
+***Nota:** el operador condicional se conoce como ternario porque tiene tres operadores, tanto la expresión condicional a evaluar como dos expresiones a ejecutar para el caso positivo o el negativo.*
+
+```js
+let num_dia=Number(prompt("\t Ingrese el número del día que desea seleccionar: ", 5));
+let dias=["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+let dia=(num_dia<=dias.length) ? dias[num_dia-1] : "¡N° de día seleccionado no existe!";
+alert("\t Día seleccionado: "+dia);
+```
+
