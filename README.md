@@ -23,7 +23,7 @@ nums.forEach((val, ind, duplic) => {
 
 #### **forEach.**
 
-Es el conjunto de un ciclo y una iteración, el cual es un método que permite llamar a un callback una vez para cada item sobre el que se itera dentro de un array.
+Es el conjunto de un ciclo y una iteración, el cual es un método que permite llamar a un callback una vez para cada ítem sobre el que se itera dentro de un array.
 
 ```js
 let frutas=["Manzana", "Sandia", "Melon", "Cereza", "Piña"];
@@ -34,11 +34,21 @@ frutas.forEach((val, ind, duplic) => {
 
 #### **map.**
 
-Es un método, que crea un duplicado con las modificaciones que itera llamando a un callback para cada item de la variable original, por lo que a su vez no altera a esta misma.
+Es un método, que crea un duplicado con las modificaciones que itera llamando a un callback para cada ítem de la variable original, por lo que a su vez no altera a esta misma.
 
 ```js
 let numbers=[65, 44, 12, 4];
 let newArr=numbers.map(num => num*10);
 alert(newArr);
+```
+
+#### **filter.**
+
+Es un método que crea un duplicado de una matriz, llenando a esta nueva con las modificaciones que itera llamando a un callback para cada ítem de la matriz original, por lo que a su vez no altera a esta misma.
+
+```js
+let edades=[9, 45, 18, 50, 15, 17, 21, 11];
+let mayores=edades.filter(edad => edad>=18);
+alert("\tEdades: "+edades+"\n\tMayores de edad: "+mayores);
 ```
 
