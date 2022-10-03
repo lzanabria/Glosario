@@ -160,3 +160,14 @@ var saludo=function(nombre="Luis Zanabria"){
 alert("Hola, soy "+saludo());
 ```
 
+#### **Función declarativa.**
+
+En las funciones declarativas, utilizamos la palabra reservada "function" al inicio para poder declarar la función.
+
+```js
+function saludo(nombre="Luis Zanabria") {
+    return nombre;
+}
+alert("Hola, soy "+saludo());
+```
+
