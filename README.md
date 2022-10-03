@@ -131,3 +131,21 @@ let numero2=1_234_567_890; //Mejor legibilidad
 alert(numero2);
 ```
 
+#### **Función flecha.**
+
+La función lambda, mas conocida como función flecha es una alternativa compacta a una expresión de función tradicional, que nos permite escribir una sintaxis de función más corta.
+
+```js
+//Sin función flecha
+frase = function() {
+    return "¡Hello World!";
+}
+
+//Con función flecha
+frase = () => {
+    return "¡Hello World!";
+}
+
+alert(frase());
+```
+
