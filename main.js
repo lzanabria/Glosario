@@ -1,10 +1,14 @@
 addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
-        let frase="¡Esto está fuera del bloque!"; //scope global
-        if (true) {
-            let frase="¡Esto está dentro del bloque!";  //scope local
-            alert(frase); //¡Esto está dentro del bloque!
+        function padre() {
+            let numero=5;
+            function hijo() {
+                numero+=10;
+                return numero;
+            }
+            return hijo;
         }
-        alert(frase); //¡Esto está fuera del bloque!
+        let closure=padre();
+        alert("\tResultado: "+closure());
     }, 500);
 });

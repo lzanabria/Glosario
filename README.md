@@ -100,3 +100,20 @@ if (true) {
 alert(frase); //¡Esto está fuera del bloque!
 ```
 
+#### **Closure.**
+
+Este permite acceder al scope de una función exterior desde una función interior. En JavaScript, los closures se crean cada vez que una función se genera. A diferencia de otros conceptos como funciones, variables u otros, los closures no se utilizan todas las veces.
+
+```js
+function padre() {
+    let numero=5;
+    function hijo() {
+        numero+=10;
+        return numero;
+    }
+    return hijo;
+}
+let closure=padre();
+alert("\tResultado: "+closure());
+```
+
