@@ -87,3 +87,16 @@ alert("▶ a=3 \n▶ b=9\n\t Resultado: "+multiplicar(3, 9)); //Se le ha dado un
 alert("▶ a=5 \n▶ b=No se le asignó un valor\n\t Resultado: "+multiplicar(5)); //Sólo se le dió valor a=5 y a la b no se le dió ningún valor, de manera que toma su valor predeterminado que es b=10
 ```
 
+#### **Nivel de scope.**
+
+El nivel de scope es el alcance que una variable tendrá en el código, en otras palabras, este decide a qué variables se tiene acceso en cada parte del código. Existen dos niveles de scope; el scope global y el scope local.
+
+```js
+let frase="¡Esto está fuera del bloque!"; //scope global
+if (true) {
+    let frase="¡Esto está dentro del bloque!";  //scope local
+    alert(frase); //¡Esto está dentro del bloque!
+}
+alert(frase); //¡Esto está fuera del bloque!
+```
+
