@@ -117,3 +117,17 @@ let closure=padre();
 alert("\tResultado: "+closure());
 ```
 
+#### **Separadores de ECMA Script.**
+
+Los separadores numéricos ayudan a la legibilidad de valores numéricos con varias cifras, se utiliza el carácter guion bajo ( _ ) para separar las cifras y no afecta el valor numérico ni la ejecución del código.
+
+```js
+//No aplica separadores.
+let numero1=1234567890; //Baja legibilidad
+alert(numero1);
+
+//Si aplica separadores.
+let numero2=1_234_567_890; //Mejor legibilidad
+alert(numero2);
+```
+
