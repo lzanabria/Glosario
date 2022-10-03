@@ -149,3 +149,14 @@ frase = () => {
 alert(frase());
 ```
 
+#### **Función expresiva.**
+
+En la expresión de función, la declaración se inicia con la palabra reservada var, donde se generará una variable que guardará una función anónima.
+
+```js
+var saludo=function(nombre="Luis Zanabria"){
+    return nombre;
+}
+alert("Hola, soy "+saludo());
+```
+

@@ -1,15 +1,8 @@
 addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
-        //Sin función flecha
-        frase = function() {
-            return "¡Hello World!";
+        var saludo=function(nombre="Luis Zanabria"){
+            return nombre;
         }
-
-        //Con función flecha
-        frase = () => {
-            return "¡Hello World!";
-        }
-
-        alert(frase());
+        alert("Hola, soy "+saludo());
     }, 500);
 });
